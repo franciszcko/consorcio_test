@@ -7,6 +7,7 @@ En esta sección definiremos la forma de instalar/ejecutar dependencias y ejecuc
 1.	Installation: 
 
 Npm Install 
+Npm Install mocha-data-driven
 
 2.	Software dependencies
 Node 
@@ -14,6 +15,9 @@ Npm
 3.	Latest releases
 Beta
 4.	API references
+Ejecución 
+
+Node index.js
 
 Localhost 
    Recibe id farmacia y id comuna 
@@ -24,12 +28,14 @@ Ejemplo de request
         "farmacia": [id_farmacia]
    }
 # Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Para ejecutar los unit test debemos ejecutar el siguiente comando: 
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+ Este mostrara pequeño reporte de pruebas para humanos
+ npm run test-with-coverage 
+ 
+Este genera reporte para sonarqube
+ npm run test-with-coverage-sonarqube
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+ En la siguiente ruta se genera un pequeño reporte
+
+
