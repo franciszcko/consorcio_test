@@ -1,0 +1,10 @@
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store
+.nyc*node
+coverage
+*.xml
+.nyc_coverage
+.nyc_output

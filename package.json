@@ -1,0 +1,27 @@
+{
+  "name": "cyp-registrar-pago",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=cobertura mocha test --reporter mocha-junit-reporter --exit ",
+    "test-with-coverage": "nyc --reporter=lcov --reporter=text-lcov --report-dir=.nyc_coverage mocha --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mssql": "^5.1.0",
+    "nyc": "^15.0.0",
+    "request": "^2.88.0",
+    "simplified-hystrixjs": "^1.0.16",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "babel-plugin-istanbul": "^6.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.0",
+    "mocha-junit-reporter": "^1.23.3"
+  }
+}
