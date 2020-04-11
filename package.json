@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=cobertura mocha test --reporter mocha-junit-reporter --exit ",
-    "test-with-coverage": "nyc --reporter=lcov --reporter=text-lcov --report-dir=.nyc_coverage mocha --exit"
+    "test-with-coverage-sonarqube": "nyc --reporter=lcov --reporter=text-lcov --report-dir=.nyc_coverage mocha --exit",
+    "test-with-coverage": "nyc --reporter=text --report-dir=.nyc_coverage mocha --exit"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "mocha-data-driven": "^1.0.1",
     "mssql": "^5.1.0",
     "nyc": "^15.0.0",
     "request": "^2.88.0",

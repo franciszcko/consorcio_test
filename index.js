@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 var app = express();
 const config = require('./config/config');
+const request = require('request');
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
@@ -28,7 +29,7 @@ app.post('/api/v1/Farmacias/turno', function (req, res, next) {
       console.log("---------------------------------------");
       console.log("Argumentos recibidos: ", searchArgs);      
 
-      var request = require('request');
+    
       var options = {
 
         'method': 'GET',
@@ -38,16 +39,14 @@ app.post('/api/v1/Farmacias/turno', function (req, res, next) {
 
       request(options, function (error, response) { 
           if (error) throw new Error(error);
-          console.log(response.body);
+          console.log(response.body);          
       });
       
       res.send('requerimiento ' + "comuna: " + req.body.comuna + "farmacia: " + req.body.farmacia);
 
-
-
 })
   
-app.get('/health.json', function(req, res) {
+app.get('/api/v1/Farmacias/health.json', function(req, res) {
     res.status(200).json({"status": "UP"});
 });
   
@@ -64,8 +63,6 @@ app.use( (err, req, res, next) => {
       "mensError": '${err}'    
     });
 });
-
-
 
 
 module.exports = app;
