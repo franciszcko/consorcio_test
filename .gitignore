@@ -8,3 +8,4 @@ coverage
 *.xml
 .nyc_coverage
 .nyc_output
+node_modules
