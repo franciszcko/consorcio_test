@@ -21,7 +21,7 @@ Node index.js
 
 Localhost 
    Recibe id farmacia y id comuna 
-   http://localhost:5010/api/v1/Farmacias/turno
+   http://localhost:5011/api/v1/Farmacias/turno
 Ejemplo de request 
    {
         "comuna": [id_comuna],
@@ -37,5 +37,6 @@ Este genera reporte para sonarqube
  npm run test-with-coverage-sonarqube
 
  En la siguiente ruta se genera un pequeño reporte
+ .nyc_output
 
 
