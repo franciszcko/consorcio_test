@@ -38,7 +38,7 @@ app.listen(puerto, () => {
 
   //POST Recibe parámetros
    
-app.post('/api/v1/Farmacias/negocio', function (req, res,next) {
+app.post('/api/v1/Farmacias/turno', function (req, res,next) {
 
     var searchArgs = 
       {
