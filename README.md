@@ -1,6 +1,5 @@
 # Introduction 
-MS de la capa exposición, que comunicara el front y la capa de negocio, recibira la data desde el front (comuna y nombre de farmacia) y envíara información a MS de capa de negocios
-
+MS que comunicara el front y la capa de negocio, recibira la data desde el front (comuna y nombre de farmacia) y responderas farmacias de la comuna, telefono, dirección, latitud y longitud
 # Getting Started
 En esta sección definiremos la forma de instalar/ejecutar dependencias y ejecución 
 
